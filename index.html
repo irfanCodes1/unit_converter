@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="converter-card">
+        <div class="header">
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <div class="input-container">
+                <input type="number" id="valueInput" placeholder="20" value="20">
+            </div>
+            <button class="convert-btn" id="convertBtn">Convert</button>
+        </div>
+
+        <div class="results">
+            <div class="conversion-group">
+                <div class="conversion-title">Length (Meter/Feet)</div>
+                <div class="conversion-values">
+                    <div class="conversion-item">
+                        <div class="conversion-result" id="metersToFeet"></div>
+                    </div>
+                    <span class="equals">|</span>
+                    <div class="conversion-item">
+                        <div class="conversion-result" id="feetToMeters"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conversion-group">
+                <div class="conversion-title">Volume (Liters/Gallons)</div>
+                <div class="conversion-values">
+                    <div class="conversion-item">
+                        <div class="conversion-result" id="litersToGallons"></div>
+                    </div>
+                    <span class="equals">|</span>
+                    <div class="conversion-item">
+                        <div class="conversion-result" id="gallonsToLiters"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conversion-group">
+                <div class="conversion-title">Mass (Kilograms/Pounds)</div>
+                <div class="conversion-values">
+                    <div class="conversion-item">
+                        <div class="conversion-result" id="kilosToPounds"></div>
+                    </div>
+                    <span class="equals">|</span>
+                    <div class="conversion-item">
+                        <div class="conversion-result" id="poundsToKilos"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
